@@ -86,9 +86,9 @@
     //Esta variable se usa para almacenar la letra del DNI
     const letra = DNI.substring(DNI.length - 1);
 
-    //Si el número del DNI no es un número no es válido
-    //Si la letra del DNI no es una letra no es válido
-    //Si la letra del DNI no coincide con la letra que se obtiene de la variable letras no es válido
+    //Si el número del DNI no es un número, no es válido
+    //Si la letra del DNI no es una letra, no es válido
+    //Si la letra del DNI no coincide con la letra que se obtiene de la variable letras, no es válido
     if (letras.charAt(numero % 23) === letra.toUpperCase()) {
       return true;
     } else {
